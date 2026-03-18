@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nel-Tec Liberia Digital Institute</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.png" alt="Nel-Tec Logo" width="50" class="me-2">
+        <span>NEL-TEC</span>
+    </a>
+
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+
+      <ul class="navbar-nav ms-auto align-items-center">
+
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        <!-- REGISTER BUTTON -->
+        <li class="nav-item ms-3">
+            <a href="#register" class="btn register-btn">Register</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER SLIDER -->
+<section id="home" class="banner-slider">
+    <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background: linear-gradient(rgba(13, 59, 102, 0.6), rgba(9, 40, 71, 0.6)), url('img/banner.png') center/cover no-repeat;">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Welcome to Nel-Tec Liberia</h1>
+                    <p class="carousel-subtitle">Empowering Minds for Digital Excellence</p>
+                    <p class="carousel-text">Innovating Minds for a Digital World</p>
+                    <div class="carousel-buttons">
+                        <a href="#courses" class="btn btn-primary-custom">Explore Courses</a>
+                        <a href="#contact" class="btn btn-secondary-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background: linear-gradient(rgba(230, 57, 70, 0.6), rgba(201, 42, 42, 0.6)), url('img/banner2.png') center/cover no-repeat;">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">From Learning to Earning</h1>
+                    <p class="carousel-subtitle">Build Your Digital Future</p>
+                    <p class="carousel-text">With Digital Skills that Matter</p>
+                    <div class="carousel-buttons">
+                        <a href="#register" class="btn btn-primary-custom">Get Started</a>
+                        <a href="#about" class="btn btn-secondary-custom">About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background: linear-gradient(rgba(8, 126, 139, 0.6), rgba(5, 191, 219, 0.6)), url('img/banner3.png') center/cover no-repeat;">
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Transform Your Career</h1>
+                    <p class="carousel-subtitle">Professional Training & Certification</p>
+                    <p class="carousel-text">Industry-Recognized Courses for Success</p>
+                    <div class="carousel-buttons">
+                        <a href="#register" class="btn btn-primary-custom">Register Now</a>
+                        <a href="#services" class="btn btn-secondary-custom">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="stats-section py-5 text-white">
+  <div class="container">
+    <div class="row text-center g-4">
+
+      <!-- Stat 1 -->
+      <div class="col-md-4">
+        <div class="stat-card p-4">
+          <div class="stat-icon mb-3">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h2 class="counter" data-target="100">0</h2>
+          <p>Happy Students</p>
+        </div>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="col-md-4">
+        <div class="stat-card p-4">
+          <div class="stat-icon mb-3">
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+          <h2 class="counter" data-target="6">0</h2>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="col-md-4">
+        <div class="stat-card p-4">
+          <div class="stat-icon mb-3">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <h2 class="counter" data-target="2">0</h2>
+          <p>Awards Won</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="img/logo.png" class="img-fluid rounded shadow" alt="Nel-Tec Liberia">
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">About Nel-Tec Liberia</h2>
+        <p class="lead mb-3">
+          Nel-Tec Liberia Digital Institute is a modern digital training center committed to equipping individuals with practical technology and business skills.
+        </p>
+
+        <p>
+          We focus on hands-on learning, empowering students, entrepreneurs, and professionals to succeed in today’s digital economy. Our programs are designed to transform learning into real earning opportunities.
+        </p>
+
+        <!-- COURSES -->
+        <div class="row g-3 mt-3">
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-laptop"></i>
+              <h6>Computer Literacy</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-palette-fill"></i>
+              <h6>Graphic Design</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-megaphone-fill"></i>
+              <h6>Digital Marketing</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-briefcase-fill"></i>
+              <h6>Entrepreneurship</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-globe"></i>
+              <h6>Online Business</h6>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="about-box p-3 text-center">
+              <i class="bi bi-code-slash"></i>
+              <h6>Web Development</h6>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#courses" class="btn register-btn mt-4">Explore Courses</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COURSES SECTION -->
+<section id="courses" class="courses-section py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Courses</h2>
+      <p class="text-muted">Practical skills designed to move you from learning to earning</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Course 1 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-laptop course-icon"></i>
+          <h5>Computer Literacy</h5>
+          <p>Learn essential computer skills for everyday and professional use.</p>
+          <span class="badge bg-primary">Beginner</span>
+          <p class="mt-2">Duration: 4 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-palette-fill course-icon"></i>
+          <h5>Graphic Design</h5>
+          <p>Master design tools and create professional graphics and branding.</p>
+          <span class="badge bg-success">Intermediate</span>
+          <p class="mt-2">Duration: 6 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-megaphone-fill course-icon"></i>
+          <h5>Digital Marketing</h5>
+          <p>Grow businesses online using social media and digital strategies.</p>
+          <span class="badge bg-warning text-dark">All Levels</span>
+          <p class="mt-2">Duration: 5 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-briefcase-fill course-icon"></i>
+          <h5>Entrepreneurship</h5>
+          <p>Learn how to start and grow a successful business.</p>
+          <span class="badge bg-danger">Beginner</span>
+          <p class="mt-2">Duration: 4 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-globe course-icon"></i>
+          <h5>Online Business</h5>
+          <p>Learn how to earn online and scale digital income streams.</p>
+          <span class="badge bg-info text-dark">Intermediate</span>
+          <p class="mt-2">Duration: 5 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="col-md-4">
+        <div class="course-card p-4 text-center">
+          <i class="bi bi-code-slash course-icon"></i>
+          <h5>Web Development</h5>
+          <p>Build modern websites using HTML, CSS, JavaScript, and frameworks.</p>
+          <span class="badge bg-dark">Advanced</span>
+          <p class="mt-2">Duration: 8 Weeks</p>
+          <a href="#register" class="btn register-btn mt-2">Enroll Now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Services</h2>
+      <p class="text-muted">Delivering innovative digital solutions and professional services</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-card service-training text-center p-4">
+          <i class="bi bi-laptop service-icon"></i>
+          <h5>IT Training & Certification</h5>
+          <p>Professional training programs designed to equip students with practical and job-ready digital skills.</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-card service-web text-center p-4">
+          <i class="bi bi-globe service-icon"></i>
+          <h5>Website Development</h5>
+          <p>We design and develop modern, responsive websites for schools, businesses, and organizations.</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-card service-marketing text-center p-4">
+          <i class="bi bi-megaphone-fill service-icon"></i>
+          <h5>Digital Marketing</h5>
+          <p>Grow your business online with social media management, branding, and marketing strategies.</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="service-card service-cloud text-center p-4">
+          <i class="bi bi-cloud-fill service-icon"></i>
+          <h5>Cloud Solutions</h5>
+          <p>Secure and scalable cloud services including hosting, storage, and business systems.</p>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="service-card service-support text-center p-4">
+          <i class="bi bi-gear-fill service-icon"></i>
+          <h5>IT Support & Consulting</h5>
+          <p>Expert guidance and technical support to help businesses optimize their IT infrastructure.</p>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="service-card service-portal text-center p-4">
+          <i class="bi bi-building service-icon"></i>
+          <h5>School E-Portal Systems</h5>
+          <p>Custom digital school systems for managing students, results, and administration efficiently.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section id="team" class="team-section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Team</h2>
+      <p class="text-muted">Meet the experts driving innovation and digital excellence</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Member 1 -->
+      <div class="col-md-4">
+        <div class="team-card text-center p-4">
+          <img src="img/fouder.jpeg" class="team-img mb-3" alt="Team Member">
+          <h5>Mohammed Massaley</h5>
+          <p class="text-muted">Founder & IT Specialist</p>
+
+          <div class="team-social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="col-md-4">
+        <div class="team-card text-center p-4">
+          <img src="images/team2.jpg" class="team-img mb-3" alt="Team Member">
+          <h5>Digital Instructor</h5>
+          <p class="text-muted">Graphic Design Expert</p>
+
+          <div class="team-social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="col-md-4">
+        <div class="team-card text-center p-4">
+          <img src="images/team3.jpg" class="team-img mb-3" alt="Team Member">
+          <h5>Marketing Specialist</h5>
+          <p class="text-muted">Digital Marketing Trainer</p>
+
+          <div class="team-social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-muted">Get in touch with us to start your digital journey</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-5">
+        <div class="contact-info p-4">
+
+          <h5 class="mb-4">Get In Touch</h5>
+
+          <p><i class="bi bi-geo-alt-fill"></i> Monrovia, Liberia</p>
+          <p><i class="bi bi-envelope-fill"></i> info@neltecliberia.com</p>
+          <p><i class="bi bi-telephone-fill"></i> +231 77 000 0000</p>
+
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/231770000000" target="_blank" class="btn whatsapp-btn mt-3">
+            <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+          </a>
+
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="col-lg-7">
+        <div class="contact-form p-4">
+
+          <form>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Full Name" required>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+
+            <button type="submit" class="btn register-btn w-100">Send Message</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register">
+    <div class="container text-center">
+        <h2 class="section-title">Register Now</h2>
+        <p>Start your digital journey today.</p>
+        <button class="btn register-btn">Sign Up</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+      © 2026 Nel-Tec Liberia Digital Institute |
+      Developed by Tec Liberia -
+      <a href="https://tecliberia.com" target="_blank" rel="noopener">www.tecliberia.com</a>
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const revealTargets = document.querySelectorAll(
+      '.section-title, .stat-card, .about-box, .course-card, .service-card, .team-card, .contact-info, .contact-form, #register .container'
+    );
+
+    revealTargets.forEach((el) => el.classList.add('reveal-fade'));
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    revealTargets.forEach((el) => observer.observe(el));
+  });
+</script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
