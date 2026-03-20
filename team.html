@@ -4,313 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team | Nel-Tec Liberia</title>
-    
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <div class="navbar-logo">
-                <img src="img/logo.png" alt="Nel-Tec Logo" title="Nel-Tec Liberia">
-                <a class="navbar-logo-text" href="index.html">Nel<span>Tec</span></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<body class="page-shell">
+    <nav class="navbar navbar-expand-lg fixed-top main-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Nel-Tec logo">
+                Nel-<span class="accent">Tec</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="team.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-register" href="register.html">Register</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn-nav" href="register.html">Register</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <header class="hero hero-team">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 hero-content text-center">
-                    <h1>Meet Our Team</h1>
-                    <p>Experts Dedicated to Your Success</p>
-                </div>
+            <div class="reveal">
+                <span class="section-kicker">Our Team</span>
+                <h1>Meet the People Building Digital Excellence</h1>
+                <p>Our leadership and instructors combine technical depth, business thinking, and a passion for learner success.</p>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- TEAM INTRO -->
-    <section style="background: #f7f7f7;">
-        <div class="container text-center">
-            <h2 class="section-title">Our Talented Team Members</h2>
-            <p class="section-subtitle">A diverse group of professionals committed to delivering excellence in technology education and solutions.</p>
-        </div>
-    </section>
+    <main>
+        <section>
+            <div class="container">
+                <span class="section-kicker">Meet Our Team</span>
+                <h2 class="section-title">Our 4 Core Team Members</h2>
+                <p class="section-lead mb-4">A dedicated group of leaders and facilitators focused on quality learning and student success.</p>
 
-    <!-- LEADERSHIP TEAM -->
-    <section>
-        <div class="container">
-            <h3 style="text-align: center; color: #0d3b66; margin-bottom: 50px; font-size: 28px; font-weight: 700;">Leadership Team</h3>
-            <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/team-prince.jpg" alt="Prince W Dahn Jr" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Prince W Dahn Jr</h4>
-                        <div class="team-role">Founder & Chief Executive Officer</div>
-                        <p>Visionary leader with deep expertise in technology, digital transformation, and business development. Founder of Nel-Tec Liberia.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="mailto:prince@neltec.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/team-samuka.jpg" alt="Samuka Teah" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Samuka Teah</h4>
-                        <div class="team-role">President</div>
-                        <p>Strategic leader overseeing company operations, business growth, and expansion initiatives. Brings years of management experience.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="mailto:samuka@neltec.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/team-sam.jpg" alt="Sam Saah Kendema" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Sam Saah Kendema</h4>
-                        <div class="team-role">Human Resource Manager</div>
-                        <p>People-focused leader ensuring team excellence, organizational culture, and professional development of all staff members.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="mailto:sam@neltec.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/team-edmos.jpg" alt="Edmos W. Montgomery" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Edmos W. Montgomery</h4>
-                        <div class="team-role">Chief Operating Officer</div>
-                        <p>Operations expert managing business processes, system efficiency, and strategic implementation of organizational initiatives.</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="mailto:edmos@neltec.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="cards-4">
+                    <article class="team-card reveal">
+                        <div class="team-avatar"><img src="img/fouder.jpeg" alt="Mohammed Massaley"></div>
+                        <h4>Mohammed Massaley</h4>
+                        <span class="team-role">Founder & CEO</span>
+                        <p class="mb-0">Leads strategic direction, innovation, and institutional partnerships for long-term impact.</p>
+                    </article>
+                    <article class="team-card reveal d2">
+                        <div class="team-avatar"><img src="img/logo.png" alt="Program Director"></div>
+                        <h4>Program Director</h4>
+                        <span class="team-role">Training Operations</span>
+                        <p class="mb-0">Coordinates curriculum quality, instructor alignment, and training delivery standards.</p>
+                    </article>
+                    <article class="team-card reveal d3">
+                        <div class="team-avatar"><img src="img/logo.png" alt="Lead Instructor"></div>
+                        <h4>Lead Instructor</h4>
+                        <span class="team-role">Technical Skills</span>
+                        <p class="mb-0">Delivers project-based instruction in web, design, and digital business skill tracks.</p>
+                    </article>
+                    <article class="team-card reveal d4">
+                        <div class="team-avatar"><img src="img/logo.png" alt="Student Success Officer"></div>
+                        <h4>Student Success Officer</h4>
+                        <span class="team-role">Learner Support</span>
+                        <p class="mb-0">Supports onboarding, learner progress, and completion to help students achieve outcomes.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- INSTRUCTORS SECTION -->
-    <section style="background: #f7f7f7;">
-        <div class="container">
-            <h3 style="text-align: center; color: #0d3b66; margin-bottom: 50px; font-size: 28px; font-weight: 700;">Course Instructors</h3>
-            <div class="team-grid">
-                <!-- Instructor 1 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-1.jpg" alt="Web Development Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Web Development Instructor</h4>
-                        <div class="team-role">Full Stack Development</div>
-                        <p>Expert in HTML, CSS, JavaScript, React, Node.js, and modern web development frameworks with extensive industry experience.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 2 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-2.jpg" alt="Cybersecurity Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Cybersecurity Instructor</h4>
-                        <div class="team-role">Network & Security</div>
-                        <p>Certified security professional teaching network infrastructure, threat analysis, penetration testing, and security protocols.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 3 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-3.jpg" alt="Cloud Services Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Cloud Services Instructor</h4>
-                        <div class="team-role">AWS & Cloud Architecture</div>
-                        <p>AWS certified architect and expert in cloud infrastructure, deployment strategies, and enterprise cloud solutions.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 4 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-4.jpg" alt="Python Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Python Instructor</h4>
-                        <div class="team-role">Programming & Data Science</div>
-                        <p>Python specialist teaching programming fundamentals, data analysis, automation, and machine learning applications.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 5 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-5.jpg" alt="Database Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Database Instructor</h4>
-                        <div class="team-role">SQL & Database Management</div>
-                        <p>Expert in database design, SQL optimization, and management systems with real-world implementation experience.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 6 -->
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="img/instructor-6.jpg" alt="Mobile Development Instructor" style="width: 100%; height: 250px; object-fit: cover;">
-                    </div>
-                    <div class="team-content">
-                        <h4>Mobile Development Instructor</h4>
-                        <div class="team-role">Cross-Platform Development</div>
-                        <p>Mobile app developer specializing in React Native, Android, iOS development and mobile app best practices.</p>
-                    </div>
+        <section>
+            <div class="container">
+                <div class="cta-band reveal">
+                    <h2>Learn Directly From Practitioners</h2>
+                    <p>Join a cohort and work with instructors who prioritize your progress and confidence.</p>
+                    <a class="btn-brand alt" href="register.html">Join the Next Intake</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- WHY OUR TEAM -->
-    <section>
+    <footer class="site-footer">
         <div class="container">
-            <h2 class="section-title">Why Our Team Stands Out</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <span class="value-icon">👨‍🎓</span>
-                    <h4>Industry Experts</h4>
-                    <p>All team members bring real-world experience from top tech companies and organizations.</p>
-                </div>
-                <div class="value-card">
-                    <span class="value-icon">🎯</span>
-                    <h4>Student-Focused</h4>
-                    <p>We're dedicated to your learning success and personal professional development goals.</p>
-                </div>
-                <div class="value-card">
-                    <span class="value-icon">🔄</span>
-                    <h4>Continuous Learning</h4>
-                    <p>Our team constantly updates skills to teach the latest industry standards and technologies.</p>
-                </div>
-                <div class="value-card">
-                    <span class="value-icon">🌍</span>
-                    <h4>Global Perspective</h4>
-                    <p>International experience combined with local knowledge of Liberia's technology landscape.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Learn From The Best</h2>
-            <p>Get expert instruction and guidance from our professional team</p>
-            <a href="courses.html" class="btn-primary-custom" style="background: white; color: #0d3b66; font-weight: 700;">Explore Courses Now</a>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
+            <div class="footer-grid">
+                <div>
                     <h4>Nel-Tec Liberia</h4>
-                    <p>Empowering Liberia through technology, innovation, and digital education.</p>
+                    <p>Empowering Liberia through digital education, innovation, and practical technology solutions.</p>
                     <div class="footer-social">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/231880369397" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer-col">
+                <div>
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="courses.html">Courses</a></li>
-                        <li><a href="team.html">Our Team</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Cyber Security</a></li>
-                        <li><a href="#">Cloud Services</a></li>
-                        <li><a href="#">Digital Training</a></li>
-                        <li><a href="#">IT Solutions</a></li>
-                        <li><a href="#">Web Development</a></li>
+                <div>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Graphic Design</a></li>
+                        <li><a href="courses.html">Digital Marketing</a></li>
+                        <li><a href="courses.html">Online Business</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Monrovia, Liberia</p>
-                    <p><i class="fas fa-phone"></i> +231 (0) 880-369-397</p>
-                    <p><i class="fas fa-envelope"></i> info@neltec.com</p>
-                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +231 880-369-397</p>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Monrovia, Liberia</li>
+                        <li>+231 (0) 880-369-397</li>
+                        <li>info@neltec.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Nel-Tec Liberia | Where Innovation Meets Expertise | All Rights Reserved</p>
-            </div>
+            <div class="footer-bottom">&copy; 2026 Nel-Tec Liberia Digital Institute. All rights reserved.</div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
