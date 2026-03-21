@@ -104,41 +104,136 @@
 
         <section class="bg-soft">
             <div class="container">
-                <span class="section-kicker">Featured Tracks</span>
-                <h2 class="section-title">Most Popular Learning Paths</h2>
-                <p class="section-lead mb-4">Choose a track and build job-ready capacity with guided mentorship.</p>
+                <span class="section-kicker">Course Categories</span>
+                <h2 class="section-title">Explore Courses by Field</h2>
+                <p class="section-lead mb-4">Browse our course offerings organized by category. Each course is designed to build practical, job-ready skills.</p>
 
-                <div class="cards-3">
-                    <article class="course-card reveal">
-                        <div class="icon-bubble"><i class="bi bi-code-slash"></i></div>
-                        <h4>Web Development</h4>
-                        <p>Build responsive websites and modern web interfaces with HTML, CSS, JavaScript, and deployment workflow.</p>
-                        <span class="badge-level">Intermediate</span>
-                        <div class="course-meta">
-                            <span><i class="bi bi-clock"></i> 8 weeks</span>
-                            <span><i class="bi bi-person-workspace"></i> Project-based</span>
+                <!-- Course Category Tabs -->
+                <ul class="nav nav-tabs course-tabs mb-5" id="courseTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech-content" type="button" role="tab" aria-controls="tech-content" aria-selected="true">
+                            <i class="bi bi-code-slash me-2"></i>Technology
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="science-tab" data-bs-toggle="tab" data-bs-target="#science-content" type="button" role="tab" aria-controls="science-content" aria-selected="false">
+                            <i class="bi bi-tree me-2"></i>Science
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative-content" type="button" role="tab" aria-controls="creative-content" aria-selected="false">
+                            <i class="bi bi-palette me-2"></i>Creative & Design
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-content" type="button" role="tab" aria-controls="business-content" aria-selected="false">
+                            <i class="bi bi-briefcase me-2"></i>Business & Entrepreneurship
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="courseTabContent">
+                    <!-- Technology Tab -->
+                    <div class="tab-pane fade show active" id="tech-content" role="tabpanel" aria-labelledby="tech-tab">
+                        <div class="cards-3">
+                            <article class="course-card reveal">
+                                <div class="icon-bubble"><i class="bi bi-laptop"></i></div>
+                                <h4>Computer Literacy</h4>
+                                <p>Foundational computer operation, internet fluency, communication tools, and productivity software for all learners.</p>
+                                <span class="badge-level">Beginner</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 4 weeks</span>
+                                    <span><i class="bi bi-person-workspace"></i> Hands-on labs</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
+                            <article class="course-card reveal d2">
+                                <div class="icon-bubble"><i class="bi bi-code-slash"></i></div>
+                                <h4>Web Development</h4>
+                                <p>Build responsive websites and modern web interfaces with HTML, CSS, JavaScript, and deployment workflow.</p>
+                                <span class="badge-level">Intermediate</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 8 weeks</span>
+                                    <span><i class="bi bi-person-workspace"></i> Capstone project</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
+                            <article class="course-card reveal d3">
+                                <div class="icon-bubble"><i class="bi bi-megaphone"></i></div>
+                                <h4>Digital Marketing</h4>
+                                <p>Master social media strategy, paid campaigns, content funnels, and growth reporting for businesses.</p>
+                                <span class="badge-level">All Levels</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 5 weeks</span>
+                                    <span><i class="bi bi-graph-up-arrow"></i> Campaign simulation</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
                         </div>
-                    </article>
-                    <article class="course-card reveal d2">
-                        <div class="icon-bubble"><i class="bi bi-palette"></i></div>
-                        <h4>Graphic Design</h4>
-                        <p>Learn visual storytelling, brand identity, marketing graphics, and client-focused creative delivery.</p>
-                        <span class="badge-level">Beginner Friendly</span>
-                        <div class="course-meta">
-                            <span><i class="bi bi-clock"></i> 6 weeks</span>
-                            <span><i class="bi bi-layers"></i> Portfolio output</span>
+                    </div>
+
+                    <!-- Science Tab -->
+                    <div class="tab-pane fade" id="science-content" role="tabpanel" aria-labelledby="science-tab">
+                        <div class="cards-3">
+                            <article class="course-card reveal">
+                                <div class="icon-bubble"><i class="bi bi-tree"></i></div>
+                                <h4>Environmental Science</h4>
+                                <p>Learn environmental sustainability, climate awareness, and practical solutions for communities and businesses.</p>
+                                <span class="badge-level">Beginner to Intermediate</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 6 weeks</span>
+                                    <span><i class="bi bi-layers"></i> Field and case studies</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
                         </div>
-                    </article>
-                    <article class="course-card reveal d3">
-                        <div class="icon-bubble"><i class="bi bi-megaphone"></i></div>
-                        <h4>Digital Marketing</h4>
-                        <p>Master social media strategy, paid campaigns, content funnels, and growth reporting for businesses.</p>
-                        <span class="badge-level">All Levels</span>
-                        <div class="course-meta">
-                            <span><i class="bi bi-clock"></i> 5 weeks</span>
-                            <span><i class="bi bi-graph-up-arrow"></i> Live case study</span>
+                    </div>
+
+                    <!-- Creative & Design Tab -->
+                    <div class="tab-pane fade" id="creative-content" role="tabpanel" aria-labelledby="creative-tab">
+                        <div class="cards-3">
+                            <article class="course-card reveal">
+                                <div class="icon-bubble"><i class="bi bi-palette"></i></div>
+                                <h4>Graphic Design</h4>
+                                <p>Learn visual storytelling, brand identity, marketing graphics, and client-focused creative delivery.</p>
+                                <span class="badge-level">Beginner to Intermediate</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 6 weeks</span>
+                                    <span><i class="bi bi-layers"></i> Portfolio projects</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
                         </div>
-                    </article>
+                    </div>
+
+                    <!-- Business & Entrepreneurship Tab -->
+                    <div class="tab-pane fade" id="business-content" role="tabpanel" aria-labelledby="business-tab">
+                        <div class="cards-3">
+                            <article class="course-card reveal">
+                                <div class="icon-bubble"><i class="bi bi-briefcase"></i></div>
+                                <h4>Entrepreneurship</h4>
+                                <p>Business model design, digital sales systems, and startup execution for local and online markets.</p>
+                                <span class="badge-level">Beginner</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 4 weeks</span>
+                                    <span><i class="bi bi-person-workspace"></i> Business sprint</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
+                            <article class="course-card reveal d2">
+                                <div class="icon-bubble"><i class="bi bi-globe"></i></div>
+                                <h4>Online Business</h4>
+                                <p>Create online income channels with practical strategies for products, services, and audience growth.</p>
+                                <span class="badge-level">Intermediate</span>
+                                <div class="course-meta">
+                                    <span><i class="bi bi-clock"></i> 5 weeks</span>
+                                    <span><i class="bi bi-graph-up-arrow"></i> Market validation</span>
+                                </div>
+                                <a class="btn-brand btn-card" href="register.html">Register Now</a>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -299,7 +394,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">&copy; 2026 Nel-Tec Liberia Digital Institute. All rights reserved. | Developed by <a href="https://tecliberiagroup.com" target="_blank" rel="noopener">Tec Liberia Group</a></div>
+            <div class="footer-bottom">&copy; 2026 Nel-Tec Liberia Digital Institute. All rights reserved. | Developed by <a href="https://tecliberia.com" target="_blank" rel="noopener">Tec Liberia Group</a></div>
         </div>
     </footer>
 
