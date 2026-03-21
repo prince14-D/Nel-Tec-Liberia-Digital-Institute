@@ -400,6 +400,69 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+    <script>
+        // Interactive Statistics Counter Animation
+        const animateStats = () => {
+            const statsCards = document.querySelectorAll('.stat-card');
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            // Intersection Observer to trigger animation when visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statCard = entry.target;
+                        const statNumber = statCard.querySelector('.stat-number');
+                        
+                        if (!statNumber.classList.contains('animated')) {
+                            animateNumber(statNumber);
+                            statNumber.classList.add('animated');
+                            
+                            // Add hover effect
+                            statCard.style.cursor = 'pointer';
+                            statCard.addEventListener('mouseenter', () => {
+                                statCard.style.transform = 'scale(1.08)';
+                            });
+                            statCard.addEventListener('mouseleave', () => {
+                                statCard.style.transform = 'scale(1)';
+                            });
+                        }
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statsCards.forEach(card => observer.observe(card));
+            
+            // Animate individual number
+            function animateNumber(element) {
+                const text = element.innerText;
+                let targetValue = parseInt(text.replace(/\D/g, ''));
+                const suffix = text.replace(/[0-9]/g, '');
+                
+                let currentValue = 0;
+                const duration = 2000; // 2 seconds
+                const increment = targetValue / (duration / 16); // 60fps
+                
+                const counter = setInterval(() => {
+                    currentValue += increment;
+                    
+                    if (currentValue >= targetValue) {
+                        element.innerText = targetValue + suffix;
+                        clearInterval(counter);
+                    } else {
+                        element.innerText = Math.floor(currentValue) + suffix;
+                    }
+                }, 16);
+            }
+        };
+        
+        // Run animation when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', animateStats);
+        } else {
+            animateStats();
+        }
+    </script>
+    
     <a href="https://wa.me/231775576405?text=Hello%20Nel-Tec" target="_blank" rel="noopener" class="whatsapp-float" title="Chat on WhatsApp">
         <i class="bi bi-whatsapp"></i>
     </a>
